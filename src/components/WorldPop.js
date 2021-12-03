@@ -6,7 +6,7 @@ const WorldPop = ({countries}) => {
         return country.population
     });
 
-    const totalPop = popList.reduce((population, element) => population + element);
+    const totalPop = popList.reduce((population, element) => population + element, 0);
 
 
     return (
@@ -14,4 +14,4 @@ const WorldPop = ({countries}) => {
     )
 }
 
-export default WorldPop; 
+export default WorldPop;
