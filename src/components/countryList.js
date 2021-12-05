@@ -1,6 +1,6 @@
 import React from "react";
 import CountryItem from "./countryItem";
-import WorldPop from "./WorldPop";
+
 
 const CountryList = ({countries, onCountrySelected}) => {
 
@@ -11,7 +11,8 @@ const CountryList = ({countries, onCountrySelected}) => {
 
     return (
         <div id="countryList" class='component'>
-            <WorldPop countries={countries} />
+            <h2>All Disney characters</h2>
+            <hr></hr>
             <ul>
                 {CountriesItems}
             </ul>

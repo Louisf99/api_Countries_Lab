@@ -14,9 +14,9 @@ const CountryContainer = () => {
     }, []);
 
     const getCountries = function(){
-        fetch('https://restcountries.com/v3.1/all')
+        fetch('https://api.disneyapi.dev/characters')
         .then(res => res.json())
-        .then(countries => setCountries(countries))
+        .then(countries => setCountries(countries.data))
     };
     
     const onCountrySelected = (country) => {

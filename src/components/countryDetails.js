@@ -7,17 +7,20 @@ const CountryDetail = ({country, onFavSelected, favCountriesList}) => {
         return <h2>Please select a country too see more details</h2>
     }
 
-    if (favCountriesList.find(favCountry => favCountry.name.common === country.name.common)) {
+    if (favCountriesList.find(favCountry => favCountry['name'] === country['name'])) {
         return (
             <div class='component'>
-            <h2>{country.name.common}</h2>
-            <img src={country.flags.png} alt={country.name.official} />
+            <h2>Chosen character</h2>
+            <hr></hr>
+            <h3>{country['name']}</h3>
+            <img src={country['imageUrl']} alt={country['imageUrl']} />
             <br/>
-            <p>Official Name: {country.name.official}</p>
-            <p>Capital: {country.capital}</p>
-            <p>Region: {country.region}</p>
-            <p>Population: {country.population}</p>
-            <a href={country.maps.googleMaps} target="_blank">Country Map</a> 
+            <h3>This character features in -</h3>
+            <p>Films: {country['films']}</p>
+            <p>tvShows: {country['tvShows']}</p>
+            <p>Friends/Allies: {country['allies']}</p>
+            <p>Enemies: {country['enemies']}</p>
+            <a href={country['sourceUrl']} target="_blank">To Find out even more info click on this!</a> 
             </div>
         )
     }
@@ -26,14 +29,17 @@ const CountryDetail = ({country, onFavSelected, favCountriesList}) => {
 
     return (
         <div class='component'>
-            <h2>{country.name.common}</h2>
-            <img src={country.flags.png} alt={country.name.official} />
+            <h2>Chosen character</h2>
+            <hr></hr>
+           <h3>{country['name']}</h3>
+            <img src={country['imageUrl']} alt={country['imageUrl']} />
             <br/>
-            <p>Official Name: {country.name.official}</p>
-            <p>Capital: {country.capital}</p>
-            <p>Region: {country.region}</p>
-            <p>Population: {country.population}</p>
-            <a href={country.maps.googleMaps} target="_blank">Country Map</a> 
+            <h3>This character features in -</h3>
+            <p>Films: {country['films']}</p>
+            <p>tvShows: {country['tvShows']}</p>
+            <p>Friends/Allies: {country['allies']}</p>
+            <p>Enemies: {country['enemies']}</p>
+            <a href={country['sourceUrl']} target="_blank">To Find out even more info click on this!</a>  
             <br/>
             <button  class="button" onClick={ () => {onFavSelected(country) } }>&#11088;</button>
         

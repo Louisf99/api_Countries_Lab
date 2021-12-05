@@ -9,7 +9,7 @@ const FavCountries = ({favCountriesList}) => {
 
     return (
         <div class='component'>
-            <h2>Favourite Countries</h2>
+            <h2>Favourite Disney characters</h2>
             <ul>
                 {starCountries}
             </ul>
