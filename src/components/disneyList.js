@@ -1,5 +1,5 @@
 import React from "react";
-import CountryItem from "./countryItem";
+import CountryItem from "./disneyItem";
 
 
 const CountryList = ({countries, onCountrySelected}) => {

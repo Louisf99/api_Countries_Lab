@@ -1,5 +1,5 @@
 import React from "react";
-import FavCountryItem from "./favCountryItem";
+import FavCountryItem from "./favDisneyItem";
 
 const FavCountries = ({favCountriesList}) => {
 

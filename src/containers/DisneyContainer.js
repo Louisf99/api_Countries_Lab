@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import CountryList from '../components/countryList';
-import CountryDetail from '../components/countryDetails';
-import FavCountries from '../components/favCountries';
+import CountryList from '../components/disneyList';
+import CountryDetail from '../components/disneyDetails';
+import FavCountries from '../components/favDisneys';
 
-const CountryContainer = () => {
+const DisneyContainer = () => {
 
     const [countries, setCountries] = useState([]);
     const [ selectedCountry, setSelectedCountry] = useState(null);
@@ -38,4 +38,4 @@ const CountryContainer = () => {
     )
 }
 
-export default CountryContainer;
+export default DisneyContainer;
