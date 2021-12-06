@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import DisneyContainer from './containers/DisneyContainer';
+import CountryContainer from './containers/CountryContainer';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
     <h1>CountryWiki</h1>
     <hr/>
-    <DisneyContainer />
+    <CountryContainer />
     </>
   );
 }

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import CountryList from '../components/disneyList';
-import CountryDetail from '../components/disneyDetails';
-import FavCountries from '../components/favDisneys';
+import CountryList from '../components/countryList';
+import CountryDetail from '../components/countryDetails';
+import FavCountries from '../components/favCountries';
 
-const DisneyContainer = () => {
+const CountryContainer = () => {
 
     const [countries, setCountries] = useState([]);
     const [ selectedCountry, setSelectedCountry] = useState(null);
@@ -14,9 +14,9 @@ const DisneyContainer = () => {
     }, []);
 
     const getCountries = function(){
-        fetch('https://api.disneyapi.dev/characters')
+        fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
-        .then(countries => setCountries(countries.data))
+        .then(countries => setCountries(countries))
     };
     
     const onCountrySelected = (country) => {
@@ -38,4 +38,4 @@ const DisneyContainer = () => {
     )
 }
 
-export default DisneyContainer;
+export default CountryContainer;

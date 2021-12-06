@@ -1,5 +1,5 @@
 import React from "react";
-import FavCountryItem from "./favDisneyItem";
+import FavCountryItem from "./favCountryItem";
 
 const FavCountries = ({favCountriesList}) => {
 
@@ -9,7 +9,7 @@ const FavCountries = ({favCountriesList}) => {
 
     return (
         <div class='component'>
-            <h2>Favourite Disney characters</h2>
+            <h2>Favourite Countries</h2>
             <ul>
                 {starCountries}
             </ul>
